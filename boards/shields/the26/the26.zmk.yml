@@ -1,0 +1,11 @@
+file_format: "1"
+id: the26
+name: The 26
+type: shield
+url: https://github.com/davidfriar/the26
+requires: [nice_nano]
+features:
+  - keys
+siblings:
+  - the26_left
+  - the26_right
