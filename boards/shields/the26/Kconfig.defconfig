@@ -1,0 +1,16 @@
+if SHIELD_THE26_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "The 26"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_THE26_LEFT || SHIELD_THE26_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
