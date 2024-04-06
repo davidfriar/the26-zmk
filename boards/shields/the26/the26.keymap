@@ -47,7 +47,7 @@
             bindings = <
     &none    &none    &none    &none    &none                &none    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
     &none    &none    &none    &none    &none                &none    &none        &none        &none        &none        &none
-                               &to KBD &to PLV          &out OUT_BLE   &out OUT_USB 
+                               &none    &none           &out OUT_BLE   &out OUT_USB 
             >;
         };
     };
