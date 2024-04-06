@@ -1,13 +1,15 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+      # url-base: https://github.com/zmkfirmware
+      url-base: https://github.com/dnaq
+      # Additional modules containing boards/shields/custom code can be listed here as well
+      # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+      revision: plover-hid-hog-attempt
   self:
     path: config
