@@ -2,9 +2,9 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define KEYBOARD 0
-#define PLOVER 1
-#define CONFIG 2
+#define KBD 0
+#define PLV 1
+#define CONF 2
 
 / {
     combos {
@@ -12,19 +12,19 @@
             combo_config_layer {
                 timeout-ms = <50>;
                 key-positions = <4 5 15 16>;
-                bindings = <&mo CONFIG>;
+                bindings = <&mo CONF>;
             };
             combo_ble_clear {
                 timeout-ms = <1000>;
                 key-positions = <0 1 2 3>;
                 bindings = <&bt BT_CLR>;
-                layers = <CONFIG>;
+                layers = <CONF>;
             };
             combo_soft_off {
                 timeout-ms = <1000>;
                 key-positions = <0 11>;
                 bindings = <&soft_off>;
-                layers = <CONFIG>;
+                layers = <CONF>;
             };
         };
     keymap {
@@ -47,7 +47,7 @@
             bindings = <
     &none    &none    &none    &none    &none                &none    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
     &none    &none    &none    &none    &none                &none    &none        &none        &none        &none        &none
-                               &to KEYBOARD &to PLOVER          &out OUT_BLE   &out OUT_USB 
+                               &to KBD &to PLV          &out OUT_BLE   &out OUT_USB 
             >;
         };
     };
