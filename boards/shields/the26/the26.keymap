@@ -1,10 +1,11 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 
-#define KBD 0
-#define PLV 1
-#define CONF 2
+#define KEYBOARD 0
+#define PLOVER 1
+#define CONFIG 2
 
 / {
     combos {
@@ -12,19 +13,19 @@
             combo_config_layer {
                 timeout-ms = <50>;
                 key-positions = <4 5 15 16>;
-                bindings = <&mo CONF>;
+                bindings = <&mo CONFIG>;
             };
             combo_ble_clear {
                 timeout-ms = <1000>;
                 key-positions = <0 1 2 3>;
                 bindings = <&bt BT_CLR>;
-                layers = <CONF>;
+                layers = <CONFIG>;
             };
             combo_soft_off {
                 timeout-ms = <1000>;
                 key-positions = <0 11>;
                 bindings = <&soft_off>;
-                layers = <CONF>;
+                layers = <CONFIG>;
             };
         };
     keymap {
@@ -47,7 +48,7 @@
             bindings = <
     &none    &none    &none    &none    &none                &none    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
     &none    &none    &none    &none    &none                &none    &none        &none        &none        &none        &none
-                               &none    &none           &out OUT_BLE   &out OUT_USB 
+                               &to KEYBOARD &to PLOVER          &out OUT_BLE   &out OUT_USB 
             >;
         };
     };
