@@ -1,5 +1,5 @@
- config SHIELD_THE26_LEFT
+config SHIELD_THE26_LEFT
     def_bool $(shields_list_contains,the26_left)
 
 config SHIELD_THE26_RIGHT
-    def_bool $(shields_list_contains,the26_right)   def_bool $(shields_list_contains,the26)
+    def_bool $(shields_list_contains,the26_right)
