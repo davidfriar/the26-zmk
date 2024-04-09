@@ -30,18 +30,18 @@
         };
     keymap {
         compatible = "zmk,keymap";
-        plover_layer {
-            bindings = <
-    &kp PLV_NM &kp PLV_TL &kp PLV_PL &kp PLV_HL  &kp PLV_ST            &kp PLV_ST  &kp PLV_FR    &kp PLV_PR    &kp PLV_LR    &kp PLV_TR    &kp PLV_DR
-    &kp PLV_SL &kp PLV_KL &kp PLV_WL &kp PLV_RL  &kp PLV_ST            &kp PLV_ST  &kp PLV_RR    &kp PLV_BR    &kp PLV_GR    &kp PLV_SR    &kp PLV_ZR
-                                     &kp PLV_A   &kp PLV_O             &kp PLV_E   &kp PLV_U 
-            >;
-        };
         keyboard_layer {
             bindings = <
     &kp HASH    &kp T    &kp P    &kp H    &kp STAR            &kp STAR    &kp F    &kp P    &kp L    &kp T    &kp D
     &kp S       &kp K    &kp W    &kp R    &kp STAR            &kp STAR    &kp R    &kp B    &kp G    &kp S    &kp Z
                                   &kp A    &kp O               &kp E       &kp U 
+            >;
+        };
+        plover_layer {
+            bindings = <
+    &kp PLV_NM &kp PLV_TL &kp PLV_PL &kp PLV_HL  &kp PLV_ST            &kp PLV_ST  &kp PLV_FR    &kp PLV_PR    &kp PLV_LR    &kp PLV_TR    &kp PLV_DR
+    &kp PLV_SL &kp PLV_KL &kp PLV_WL &kp PLV_RL  &kp PLV_ST            &kp PLV_ST  &kp PLV_RR    &kp PLV_BR    &kp PLV_GR    &kp PLV_SR    &kp PLV_ZR
+                                     &kp PLV_A   &kp PLV_O             &kp PLV_E   &kp PLV_U 
             >;
         };
         config_layer {
