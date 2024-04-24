@@ -3,8 +3,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define KEYBOARD 0
-#define PLOVER 1
+#define PLOVER 0
+#define KEYBOARD 1
 #define CONFIG 2
 
 / {
