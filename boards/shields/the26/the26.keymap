@@ -17,13 +17,13 @@
             };
             combo_ble_clear {
                 timeout-ms = <1000>;
-                key-positions = <0 1 2 3>;
+                key-positions = <4 5 15 16 18>;
                 bindings = <&bt BT_CLR>;
                 layers = <CONFIG>;
             };
             combo_soft_off {
                 timeout-ms = <1000>;
-                key-positions = <0 11>;
+                key-positions = <0 4 5 11 15 16>;
                 bindings = <&soft_off>;
                 layers = <CONFIG>;
             };
@@ -46,9 +46,9 @@
         };
         config_layer {
             bindings = <
-    &none    &none    &none    &none    &none                &none    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
-    &none    &none    &none    &none    &none                &none    &none        &none        &none        &none        &none
-                               &to KEYBOARD &to PLOVER          &out OUT_BLE   &out OUT_USB 
+    &none    &none    &none    &none    &none                    &none    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
+    &none    &none    &none    &none    &none                    &none    &none        &none        &none        &none        &none
+                               &to KEYBOARD &to PLOVER           &out OUT_BLE   &out OUT_USB 
             >;
         };
     };
